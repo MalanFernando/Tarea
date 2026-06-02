@@ -1,0 +1,315 @@
+body {
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--gray-200);
+    padding-bottom: 16px;
+}
+
+[id$="hlInicio"] {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 18px;
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+[id$="hlInicio"]:hover {
+    background: var(--gray-200);
+}
+
+[id$="lblMensaje"] {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+[id$="gvProductos"] {
+    width: 100%;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border-collapse: collapse;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+[id$="gvProductos"] th {
+    background: var(--primary);
+    color: white;
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+[id$="gvProductos"] td {
+    padding: 12px;
+    border-bottom: 1px solid var(--gray-100);
+    vertical-align: middle;
+}
+
+[id$="gvProductos"] tr:hover td {
+    background: #F8FAFC;
+}
+
+[id$="gvProductos"] input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    font-size: 13px;
+}
+
+[id$="gvProductos"] input[value="Editar"] {
+    background: var(--info);
+    color: white;
+}
+
+[id$="gvProductos"] input[value="Editar"]:hover {
+    background: #2563EB;
+    transform: translateY(-1px);
+}
+
+[id$="gvProductos"] input[value="Eliminar"] {
+    background: var(--danger);
+    color: white;
+}
+
+[id$="gvProductos"] input[value="Eliminar"]:hover {
+    background: #DC2626;
+    transform: translateY(-1px);
+}
+
+[id$="btnNuevo"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    transition: var(--transition);
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+[id$="btnNuevo"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+[id$="pnlFormulario"] {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    margin-top: 20px;
+}
+
+[id$="pnlFormulario"] h3 {
+    color: var(--primary);
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 12px;
+}
+
+[id$="lblNombre"], [id$="lblDescripcion"], [id$="lblPrecio"],
+[id$="lblCategoria"], [id$="lblProveedor"], [id$="lblImagenes"] {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+[id$="txtNombre"], [id$="txtPrecio"] {
+    width: 100%;
+    max-width: 400px;
+    height: 44px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 0 14px;
+    outline: none;
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+[id$="txtNombre"]:focus, [id$="txtPrecio"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(14,122,78,.15);
+}
+
+[id$="txtDescripcion"] {
+    width: 100%;
+    max-width: 400px;
+    min-height: 80px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    outline: none;
+    transition: var(--transition);
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+[id$="txtDescripcion"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(14,122,78,.15);
+}
+
+[id$="ddlCategoria"], [id$="ddlProveedor"] {
+    width: 100%;
+    max-width: 400px;
+    height: 44px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 0 12px;
+    outline: none;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[id$="ddlCategoria"]:focus, [id$="ddlProveedor"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(14,122,78,.15);
+}
+
+[id$="rfvNombre"], [id$="rfvDescripcion"], [id$="rfvPrecio"],
+[id$="cvPrecio"], [id$="rfvProveedor"] {
+    display: block;
+    font-size: 12px;
+    color: var(--danger);
+    margin-top: 4px;
+}
+
+[id$="gvImagenes"] {
+    background: var(--gray-50);
+    border-radius: var(--radius-sm);
+    padding: 8px;
+    margin: 8px 0;
+}
+
+[id$="gvImagenes"] td {
+    padding: 8px;
+}
+
+[id$="gvImagenes"] input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    background: var(--danger);
+    color: white;
+    transition: var(--transition);
+    font-size: 12px;
+}
+
+[id$="gvImagenes"] input[type="submit"]:hover {
+    background: #DC2626;
+}
+
+[id$="lblSinImagenes"] {
+    display: block;
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+[id$="fuImagen"] {
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+[id$="btnCargarImagen"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    background: var(--gray-200);
+    color: var(--text-primary);
+    transition: var(--transition);
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+[id$="btnCargarImagen"]:hover {
+    background: var(--gray-300);
+}
+
+[id$="lblInfoImagen"] {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+[id$="btnGuardar"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    transition: var(--transition);
+    font-size: 14px;
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+[id$="btnGuardar"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+[id$="btnCancelar"] {
+    border: 2px solid var(--gray-200);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: var(--radius-sm);
+    background: white;
+    color: var(--text-primary);
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+[id$="btnCancelar"]:hover {
+    border-color: var(--gray-400);
+    background: var(--gray-50);
+}
+
+img.producto-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+}
+
+span.sin-imagen {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+br { display: none; }

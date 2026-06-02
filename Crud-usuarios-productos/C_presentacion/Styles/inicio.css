@@ -1,0 +1,70 @@
+body {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--text-primary);
+    font-size: 28px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--gray-200);
+    padding-bottom: 16px;
+}
+
+[id$="lblBienvenida"] {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+[id$="lblRol"] {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background: var(--primary);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+[id$="hlMiPerfil"], [id$="hlAdmin"], [id$="hlProveedores"], [id$="hlProductos"] {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+[id$="hlMiPerfil"]::before { content: "👤 "; }
+[id$="hlAdmin"]::before { content: "⚙️ "; }
+[id$="hlProveedores"]::before { content: "🏢 "; }
+[id$="hlProductos"]::before { content: "📦 "; }
+
+[id$="btnCerrarSesion"] {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: var(--radius-sm);
+    background: var(--danger);
+    color: white;
+    transition: var(--transition);
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+[id$="btnCerrarSesion"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+h3 {
+    color: var(--text-primary);
+    font-size: 22px;
+    margin: 36px 0 20px;
+}
+
+br { display: none; }

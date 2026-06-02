@@ -1,0 +1,6 @@
+D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\bin\Debug\C_datos.dll
+D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\bin\Debug\C_datos.pdb
+D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.csproj.AssemblyReference.cache
+D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.csproj.CoreCompileInputs.cache
+D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.dll
+D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.pdb

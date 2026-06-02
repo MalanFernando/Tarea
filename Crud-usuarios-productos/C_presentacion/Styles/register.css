@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    padding: 20px;
+}
+
+form {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: var(--shadow-lg);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+[id$="lblMensaje"] {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+[id$="lblNombre"], [id$="lblCorreo"], [id$="lblContrasena"],
+[id$="lblConfirmar"], [id$="lblCedula"], [id$="lblCelular"], [id$="lblRol"] {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+[id$="txtNombre"], [id$="txtCorreo"], [id$="txtContrasena"],
+[id$="txtConfirmar"], [id$="txtCedula"], [id$="txtCelular"] {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 0 16px;
+    outline: none;
+    transition: var(--transition);
+    font-size: 15px;
+}
+
+[id$="txtNombre"]:focus, [id$="txtCorreo"]:focus, [id$="txtContrasena"]:focus,
+[id$="txtConfirmar"]:focus, [id$="txtCedula"]:focus, [id$="txtCelular"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(14,122,78,.15);
+}
+
+[id$="ddlRol"] {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 0 12px;
+    outline: none;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+[id$="ddlRol"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(14,122,78,.15);
+}
+
+[id$="rfvNombre"], [id$="rfvCorreo"], [id$="rfvContrasena"], [id$="rfvConfirmar"],
+[id$="cvContrasenas"] {
+    display: block;
+    font-size: 12px;
+    color: var(--danger);
+    margin-top: 4px;
+}
+
+[id$="btnRegistrar"] {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px;
+}
+
+[id$="btnRegistrar"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+[id$="hlLogin"] {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+br { display: none; }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}

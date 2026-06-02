@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    padding: 20px;
+}
+
+form {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 50px;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+h2 {
+    color: var(--danger);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2::before {
+    content: "⚠️ ";
+    font-size: 32px;
+}
+
+p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+strong {
+    color: var(--danger);
+}
+
+[id$="hlVolver"] {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 28px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+[id$="hlVolver"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: white;
+}
+
+br { display: none; }
