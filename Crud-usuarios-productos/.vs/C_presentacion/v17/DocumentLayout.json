@@ -1,9 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea2-crud-productos\\Crud-usuarios-productos\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|d:\\instituto\\tercersemestre\\progra\\tarea2-crud-productos\\crud-usuarios-productos\\c_datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|c:\\users\\user\\documents\\institute\\programming\\tarea\\crud-usuarios-productos\\c_presentacion\\error413.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\error413.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\c_presentacion\\scripts\\charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\scripts\\charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\c_datos\\usuariodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|solutionrelative:c_datos\\usuariodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\c_datos\\productodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|solutionrelative:c_datos\\productodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\c_presentacion\\adminproductos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\adminproductos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\c_datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|solutionrelative:c_datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,20 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea2-crud-productos\\Crud-usuarios-productos\\C_datos\\Conexion.cs",
-              "RelativeDocumentMoniker": "C_datos\\Conexion.cs",
-              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea2-crud-productos\\Crud-usuarios-productos\\C_datos\\Conexion.cs",
-              "RelativeToolTip": "C_datos\\Conexion.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T18:03:25.935Z",
+              "Title": "Error413.aspx",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_presentacion\\Error413.aspx",
+              "RelativeDocumentMoniker": "C_presentacion\\Error413.aspx",
+              "ToolTip": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_presentacion\\Error413.aspx",
+              "RelativeToolTip": "C_presentacion\\Error413.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-03T01:23:12.609Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioDatos.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_datos\\UsuarioDatos.cs",
+              "RelativeDocumentMoniker": "C_datos\\UsuarioDatos.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_datos\\UsuarioDatos.cs",
+              "RelativeToolTip": "C_datos\\UsuarioDatos.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T01:20:51.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_datos\\ProductoDatos.cs",
+              "RelativeDocumentMoniker": "C_datos\\ProductoDatos.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_datos\\ProductoDatos.cs",
+              "RelativeToolTip": "C_datos\\ProductoDatos.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwBcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T01:19:51.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "charts.js",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_presentacion\\Scripts\\charts.js",
+              "RelativeDocumentMoniker": "C_presentacion\\Scripts\\charts.js",
+              "ToolTip": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_presentacion\\Scripts\\charts.js",
+              "RelativeToolTip": "C_presentacion\\Scripts\\charts.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-03T01:14:49.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminProductos.aspx",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_presentacion\\AdminProductos.aspx",
+              "RelativeDocumentMoniker": "C_presentacion\\AdminProductos.aspx",
+              "ToolTip": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_presentacion\\AdminProductos.aspx",
+              "RelativeToolTip": "C_presentacion\\AdminProductos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-03T00:42:08.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "C_datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\Institute\\Programming\\Tarea\\Crud-usuarios-productos\\C_datos\\Conexion.cs",
+              "RelativeToolTip": "C_datos\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T18:03:25.935Z"
             }
           ]
         }

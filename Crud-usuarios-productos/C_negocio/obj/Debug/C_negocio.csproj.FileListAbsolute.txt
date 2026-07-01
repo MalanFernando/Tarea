@@ -7,3 +7,12 @@ D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos
 D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.csproj.Up2Date
 D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.dll
 D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.pdb
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\bin\Debug\C_negocio.dll
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\bin\Debug\C_negocio.pdb
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\bin\Debug\C_datos.dll
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\bin\Debug\C_datos.pdb
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.csproj.Up2Date
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.dll
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_negocio\obj\Debug\C_negocio.pdb

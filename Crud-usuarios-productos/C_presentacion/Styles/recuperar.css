@@ -3,17 +3,17 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    background: var(--muted);
     padding: 20px;
 }
 
 form {
     background: var(--bg-card);
-    border-radius: var(--radius-lg);
     padding: 40px;
     width: 100%;
     max-width: 420px;
-    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
 }
 
 h2 {
@@ -51,7 +51,7 @@ h2 {
 
 [id$="txtCorreo"]:focus {
     border-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(14,122,78,.15);
+    box-shadow: 0 0 0 2px var(--ring);
 }
 
 [id$="rfvCorreo"] {
@@ -59,25 +59,25 @@ h2 {
     font-size: 12px;
     color: var(--danger);
     margin-top: 4px;
+    margin-bottom: 20px;
 }
 
 [id$="btnRecuperar"] {
     width: 100%;
     height: 48px;
     border: none;
-    border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: var(--radius-md);
+    background: var(--primary);
     color: white;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
-    margin-top: 10px;
+    margin-top: 24px;
 }
 
 [id$="btnRecuperar"]:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    background: var(--primary-dark);
 }
 
 [id$="lblContrasena"] {
@@ -91,6 +91,7 @@ h2 {
     border-radius: var(--radius-sm);
     margin: 16px 0;
     word-break: break-all;
+    border: 1px solid var(--gray-200);
 }
 
 [id$="hlLogin"] {
@@ -100,7 +101,7 @@ h2 {
     margin-top: 16px;
 }
 
-br { display: none; }
+
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;

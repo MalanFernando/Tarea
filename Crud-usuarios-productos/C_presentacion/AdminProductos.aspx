@@ -1,10 +1,13 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminProductos.aspx.cs" Inherits="C_presentacion.AdminProductos" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminProductos.aspx.cs" Inherits="C_presentacion.AdminProductos" ResponseEncoding="utf-8" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>Administración de Productos - CRUD Tienda</title>
     <link rel="stylesheet" type="text/css" href="Styles/base.css" />
     <link rel="stylesheet" type="text/css" href="Styles/admin-productos.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/toast.css" />
+    <script src="Scripts/toast.js"></script>
     <script>
         function validarImagen(input) {
             var extensiones = ['.jpg', '.jpeg', '.png', '.gif'];
@@ -23,13 +26,13 @@
                 }
 
                 if (!valida) {
-                    alert('Formato no válido. Solo se permiten imágenes JPG, PNG o GIF.');
+                    mostrarToast('Formato no válido. Solo se permiten imágenes JPG, PNG o GIF.', 'error');
                     input.value = '';
                     return;
                 }
 
                 if (archivo.size > maxBytes) {
-                    alert('La imagen es demasiado grande. El tamaño máximo es 30 MB.');
+                    mostrarToast('La imagen es demasiado grande. El tamaño máximo es 30 MB.', 'warning');
                     input.value = '';
                     return;
                 }
@@ -40,12 +43,24 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Administración de Productos</h2>
+            <nav class="sidebar">
+            <asp:HyperLink ID="hlMiPerfil" runat="server" NavigateUrl="~/MiPerfil.aspx">Mi Perfil</asp:HyperLink>
+
+            <asp:HyperLink ID="hlAdmin" runat="server" NavigateUrl="~/AdminUsuarios.aspx" Visible="true">Panel de Administración de Usuarios</asp:HyperLink>
+
+            <asp:HyperLink ID="hlProveedores" runat="server" NavigateUrl="~/AdminProveedores.aspx" Visible="true">Administrar Proveedores</asp:HyperLink>
+
+            <asp:HyperLink ID="hlProductos" runat="server" NavigateUrl="~/AdminProductos.aspx" Visible="true">Administrar Productos</asp:HyperLink>
+
             <asp:HyperLink ID="hlInicio" runat="server" NavigateUrl="~/Inicio.aspx">Volver al Inicio</asp:HyperLink>
-            <br /><br />
+
+            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="btnCerrarSesion_Click" />
+            </nav>
+            <main class="content">
+            <h2>Administración de Productos</h2>
 
             <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Visible="false"></asp:Label>
-            <br />
+            
 
             <asp:GridView ID="gvProductos" runat="server" AutoGenerateColumns="false"
                 OnRowCommand="gvProductos_RowCommand" CellPadding="5" DataKeyNames="pr_id">
@@ -71,9 +86,9 @@
                 </Columns>
             </asp:GridView>
 
-            <br />
+            
             <asp:Button ID="btnNuevo" runat="server" Text="Agregar Nuevo Producto" OnClick="btnNuevo_Click" />
-            <br /><br />
+            
 
             <asp:Panel ID="pnlFormulario" runat="server" Visible="false">
                 <h3><asp:Label ID="lblTituloFormulario" runat="server" Text="Agregar Producto"></asp:Label></h3>
@@ -85,14 +100,14 @@
                 <asp:RequiredFieldValidator ID="rfvNombre" runat="server"
                     ControlToValidate="txtNombre" ErrorMessage="El nombre es obligatorio"
                     ForeColor="Red" EnableClientScript="false"></asp:RequiredFieldValidator>
-                <br /><br />
+                
 
                 <asp:Label ID="lblDescripcion" runat="server" Text="Descripción:"></asp:Label>
                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" Rows="3" Columns="40"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server"
                     ControlToValidate="txtDescripcion" ErrorMessage="La descripción es obligatoria"
                     ForeColor="Red" EnableClientScript="false"></asp:RequiredFieldValidator>
-                <br /><br />
+                
 
                 <asp:Label ID="lblPrecio" runat="server" Text="Precio:"></asp:Label>
                 <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox>
@@ -103,11 +118,11 @@
                     ControlToValidate="txtPrecio" Operator="DataTypeCheck" Type="Double"
                     ErrorMessage="El precio debe ser un número válido"
                     ForeColor="Red" EnableClientScript="false"></asp:CompareValidator>
-                <br /><br />
+                
 
                 <asp:Label ID="lblCategoria" runat="server" Text="Categoría:"></asp:Label>
                 <asp:DropDownList ID="ddlCategoria" runat="server"></asp:DropDownList>
-                <br /><br />
+                
 
                 <asp:Label ID="lblProveedor" runat="server" Text="Proveedor:"></asp:Label>
                 <asp:DropDownList ID="ddlProveedor" runat="server"></asp:DropDownList>
@@ -115,10 +130,10 @@
                     ControlToValidate="ddlProveedor" InitialValue=""
                     ErrorMessage="Seleccione un proveedor"
                     ForeColor="Red" EnableClientScript="false"></asp:RequiredFieldValidator>
-                <br /><br />
+                
 
                 <asp:Label ID="lblImagenes" runat="server" Text="Imágenes (máximo 3):"></asp:Label>
-                <br />
+                
                 <asp:GridView ID="gvImagenes" runat="server" AutoGenerateColumns="false"
                     OnRowCommand="gvImagenes_RowCommand" DataKeyNames="img_id"
                     ShowHeader="false" GridLines="None" CellPadding="5">
@@ -128,15 +143,15 @@
                     </Columns>
                 </asp:GridView>
                 <asp:Label ID="lblSinImagenes" runat="server" Text="(sin imágenes)" Font-Italic="true"></asp:Label>
-                <br /><br />
+                
 
                 <asp:FileUpload ID="fuImagen" runat="server" />
                 <asp:Button ID="btnCargarImagen" runat="server" Text="Agregar Imagen" OnClick="btnCargarImagen_Click" />
-                <br />
+                
                 <asp:Label ID="lblInfoImagen" runat="server"
                     Text="(formatos: JPG, PNG, GIF | máximo 30 MB)"
                     ForeColor="Gray" Font-Italic="true"></asp:Label>
-                <br /><br />
+                
 
                 <asp:HiddenField ID="hfNuevasImagenes" runat="server" Value="" />
                 <asp:HiddenField ID="hfImagenesAEliminar" runat="server" Value="" />
@@ -144,6 +159,7 @@
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
                 <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" />
             </asp:Panel>
+            </main>
         </div>
     </form>
 </body>

@@ -1,7 +1,8 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="C_presentacion.Inicio" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="C_presentacion.Inicio" ResponseEncoding="utf-8" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>Inicio - CRUD Tienda</title>
     <link rel="stylesheet" type="text/css" href="Styles/base.css" />
     <link rel="stylesheet" type="text/css" href="Styles/inicio.css" />
@@ -37,27 +38,30 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Bienvenido al Sistema CRUD Tienda</h2>
-
+            <nav class="sidebar">
             <asp:Label ID="lblBienvenida" runat="server"></asp:Label>
-            <br /><br />
+
             <asp:Label ID="lblRol" runat="server"></asp:Label>
-            <br /><br />
+
 
             <asp:HyperLink ID="hlMiPerfil" runat="server" NavigateUrl="~/MiPerfil.aspx">Mi Perfil</asp:HyperLink>
-            <br /><br />
+
 
             <asp:HyperLink ID="hlAdmin" runat="server" NavigateUrl="~/AdminUsuarios.aspx" Visible="false">Panel de Administración de Usuarios</asp:HyperLink>
-            <br /><br />
+
 
             <asp:HyperLink ID="hlProveedores" runat="server" NavigateUrl="~/AdminProveedores.aspx" Visible="false">Administrar Proveedores</asp:HyperLink>
-            <br /><br />
+
 
             <asp:HyperLink ID="hlProductos" runat="server" NavigateUrl="~/AdminProductos.aspx" Visible="false">Administrar Productos</asp:HyperLink>
-            <br /><br />
+
+            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="btnCerrarSesion_Click" />
+            </nav>
+            <main class="content">
+            <h2>Bienvenido al Sistema CRUD Tienda</h2>
 
             <asp:Panel ID="pnlCharts" runat="server" Visible="false">
-                <h3>Dashboard</h3>
+                <h3>Panel de control</h3>
 
                 <div class="chart-row">
                     <div class="chart-container">
@@ -77,8 +81,7 @@
                     </div>
                 </div>
             </asp:Panel>
-
-            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="btnCerrarSesion_Click" />
+            </main>
         </div>
     </form>
 

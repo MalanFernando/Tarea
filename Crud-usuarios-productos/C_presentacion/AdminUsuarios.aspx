@@ -1,10 +1,13 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminUsuarios.aspx.cs" Inherits="C_presentacion.AdminUsuarios" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminUsuarios.aspx.cs" Inherits="C_presentacion.AdminUsuarios" ResponseEncoding="utf-8" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>Administración de Usuarios - CRUD Tienda</title>
     <link rel="stylesheet" type="text/css" href="Styles/base.css" />
     <link rel="stylesheet" type="text/css" href="Styles/admin-usuarios.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/toast.css" />
+    <script src="Scripts/toast.js"></script>
     <script>
         function validarImagen(input) {
             var extensiones = ['.jpg', '.jpeg', '.png', '.gif'];
@@ -23,13 +26,13 @@
                 }
 
                 if (!valida) {
-                    alert('Formato no válido. Solo se permiten imágenes JPG, PNG o GIF.');
+                    mostrarToast('Formato no válido. Solo se permiten imágenes JPG, PNG o GIF.', 'error');
                     input.value = '';
                     return;
                 }
 
                 if (archivo.size > maxBytes) {
-                    alert('La imagen es demasiado grande. El tamaño máximo es 30 MB.');
+                    mostrarToast('La imagen es demasiado grande. El tamaño máximo es 30 MB.', 'warning');
                     input.value = '';
                     return;
                 }
@@ -40,13 +43,25 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Administración de Usuarios</h2>
+            <nav class="sidebar">
+            <asp:HyperLink ID="hlMiPerfil" runat="server" NavigateUrl="~/MiPerfil.aspx">Mi Perfil</asp:HyperLink>
+
+            <asp:HyperLink ID="hlAdmin" runat="server" NavigateUrl="~/AdminUsuarios.aspx" Visible="true">Panel de Administración de Usuarios</asp:HyperLink>
+
+            <asp:HyperLink ID="hlProveedores" runat="server" NavigateUrl="~/AdminProveedores.aspx" Visible="true">Administrar Proveedores</asp:HyperLink>
+
+            <asp:HyperLink ID="hlProductos" runat="server" NavigateUrl="~/AdminProductos.aspx" Visible="true">Administrar Productos</asp:HyperLink>
+
             <asp:HyperLink ID="hlInicio" runat="server" NavigateUrl="~/Inicio.aspx">Volver al Inicio</asp:HyperLink>
-            <br /><br />
+
+            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="btnCerrarSesion_Click" />
+            </nav>
+            <main class="content">
+            <h2>Administración de Usuarios</h2>
 
             <!-- Mensaje de feedback -->
             <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Visible="false"></asp:Label>
-            <br />
+
 
             <!-- GridView con la lista de usuarios -->
             <asp:GridView ID="gvUsuarios" runat="server" AutoGenerateColumns="false"
@@ -65,9 +80,9 @@
                 </Columns>
             </asp:GridView>
 
-            <br />
+            
             <asp:Button ID="btnNuevo" runat="server" Text="Agregar Nuevo Usuario" OnClick="btnNuevo_Click" />
-            <br /><br />
+            
 
             <!-- Panel para agregar o editar usuario -->
             <asp:Panel ID="pnlFormulario" runat="server" Visible="false">
@@ -82,7 +97,7 @@
                 <asp:RequiredFieldValidator ID="rfvNombre" runat="server"
                     ControlToValidate="txtNombre" ErrorMessage="El nombre es obligatorio"
                     ForeColor="Red" EnableClientScript="false"></asp:RequiredFieldValidator>
-                <br /><br />
+                
 
                 <!-- Correo -->
                 <asp:Label ID="lblCorreo" runat="server" Text="Correo Electrónico:"></asp:Label>
@@ -90,14 +105,14 @@
                 <asp:RequiredFieldValidator ID="rfvCorreo" runat="server"
                     ControlToValidate="txtCorreo" ErrorMessage="El correo es obligatorio"
                     ForeColor="Red" EnableClientScript="false"></asp:RequiredFieldValidator>
-                <br /><br />
+                
 
                 <!-- Contraseña (solo obligatoria para nuevo usuario) -->
                 <asp:Label ID="lblContrasena" runat="server" Text="Contraseña:"></asp:Label>
                 <asp:TextBox ID="txtContrasena" runat="server" TextMode="Password"></asp:TextBox>
                 <asp:Label ID="lblInfoContrasena" runat="server" Text="(dejar vacío para mantener la actual)"
                     ForeColor="Gray" Font-Italic="true"></asp:Label>
-                <br /><br />
+                
 
                 <!-- Confirmar contraseña -->
                 <asp:Label ID="lblConfirmar" runat="server" Text="Confirmar Contraseña:"></asp:Label>
@@ -106,17 +121,17 @@
                     ControlToValidate="txtConfirmar" ControlToCompare="txtContrasena"
                     ErrorMessage="Las contraseñas no coinciden" ForeColor="Red"
                     EnableClientScript="false"></asp:CompareValidator>
-                <br /><br />
+                
 
                 <!-- Cédula -->
                 <asp:Label ID="lblCedula" runat="server" Text="Cédula (opcional):"></asp:Label>
                 <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox>
-                <br /><br />
+                
 
                 <!-- Celular -->
                 <asp:Label ID="lblCelular" runat="server" Text="Celular (opcional):"></asp:Label>
                 <asp:TextBox ID="txtCelular" runat="server"></asp:TextBox>
-                <br /><br />
+                
 
                 <!-- Rol -->
                 <asp:Label ID="lblRol" runat="server" Text="Rol:"></asp:Label>
@@ -124,23 +139,23 @@
                     <asp:ListItem Text="Empleado" Value="Empleado"></asp:ListItem>
                     <asp:ListItem Text="Administrador" Value="Administrador"></asp:ListItem>
                 </asp:DropDownList>
-                <br /><br />
+                
 
                 <!-- Imagen de perfil -->
                 <asp:Label ID="lblImagen" runat="server" Text="Foto de perfil:"></asp:Label>
-                <br />
+                
                 <asp:Image ID="imgPerfil" runat="server" Width="100" Height="100" Visible="false" />
                 <asp:Label ID="lblSinImagen" runat="server" Text="(sin imagen)" Font-Italic="true"
                     Visible="false"></asp:Label>
-                <br /><br />
+                
 
                 <asp:FileUpload ID="fuImagen" runat="server" />
                 <asp:Button ID="btnCargarImagen" runat="server" Text="Cargar Imagen" OnClick="btnCargarImagen_Click" />
-                <br />
+                
                 <asp:Label ID="lblInfoImagen" runat="server"
                     Text="(formatos: JPG, PNG, GIF | máximo 30 MB)"
                     ForeColor="Gray" Font-Italic="true"></asp:Label>
-                <br /><br />
+                
 
                 <asp:HiddenField ID="hfNuevaImagen" runat="server" Value="" />
 
@@ -148,6 +163,7 @@
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
                 <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" />
             </asp:Panel>
+            </main>
         </div>
     </form>
 </body>

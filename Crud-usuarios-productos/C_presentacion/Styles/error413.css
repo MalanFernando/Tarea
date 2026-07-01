@@ -3,18 +3,19 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    background: var(--muted);
     padding: 20px;
 }
 
 form {
     background: var(--bg-card);
-    border-radius: var(--radius-lg);
     padding: 50px;
     width: 100%;
     max-width: 460px;
-    box-shadow: var(--shadow-lg);
     text-align: center;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    border-top: 4px solid var(--danger);
 }
 
 h2 {
@@ -43,8 +44,8 @@ strong {
     display: inline-block;
     margin-top: 24px;
     padding: 12px 28px;
-    border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: var(--radius-md);
+    background: var(--primary);
     color: white;
     font-weight: 600;
     font-size: 14px;
@@ -52,9 +53,8 @@ strong {
 }
 
 [id$="hlVolver"]:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    background: var(--primary-dark);
     color: white;
 }
 
-br { display: none; }
+

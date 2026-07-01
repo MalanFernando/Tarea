@@ -6,7 +6,7 @@ namespace C_datos
     public class Conexion
     {
         // Cadena de conexión usando Windows Authentication
-        private string cadenaConexion = "Data Source=BUMBLEBEE\\SQLEXPRESS;Initial Catalog=CRUD_Tienda;Integrated Security=True;TrustServerCertificate=True";
+        private string cadenaConexion = "Data Source=DESKTOP-E1BDAD6\\SQLEXPRESS;Initial Catalog=CRUD_Tienda;Integrated Security=True;TrustServerCertificate=True";
 
         // Retorna una nueva conexión SQL configurada con la cadena de conexión
         public SqlConnection ObtenerConexion()

@@ -23,6 +23,18 @@ namespace C_negocio
             return usuarioDatos.RegistrarUsuario(nombre, correo, contrasena, cedula, celular, rol);
         }
 
+        // Verifica si una cédula ya está registrada
+        public bool CedulaExiste(string cedula)
+        {
+            return usuarioDatos.CedulaExiste(cedula);
+        }
+
+        // Verifica si una cédula ya está registrada excluyendo un ID (para ediciones)
+        public bool CedulaExiste(string cedula, int excludeUserId)
+        {
+            return usuarioDatos.CedulaExiste(cedula, excludeUserId);
+        }
+
         // Verifica si un correo electrónico ya está registrado
         public bool CorreoExiste(string correo)
         {
