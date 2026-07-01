@@ -1,10 +1,13 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminProveedores.aspx.cs" Inherits="C_presentacion.AdminProveedores" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminProveedores.aspx.cs" Inherits="C_presentacion.AdminProveedores" ResponseEncoding="utf-8" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>Administración de Proveedores - CRUD Tienda</title>
     <link rel="stylesheet" type="text/css" href="Styles/base.css" />
     <link rel="stylesheet" type="text/css" href="Styles/admin-proveedores.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/toast.css" />
+    <script src="Scripts/toast.js"></script>
     <script>
         function validarImagen(input) {
             var extensiones = ['.jpg', '.jpeg', '.png', '.gif'];
@@ -23,13 +26,13 @@
                 }
 
                 if (!valida) {
-                    alert('Formato no válido. Solo se permiten imágenes JPG, PNG o GIF.');
+                    mostrarToast('Formato no válido. Solo se permiten imágenes JPG, PNG o GIF.', 'error');
                     input.value = '';
                     return;
                 }
 
                 if (archivo.size > maxBytes) {
-                    alert('La imagen es demasiado grande. El tamaño máximo es 30 MB.');
+                    mostrarToast('La imagen es demasiado grande. El tamaño máximo es 30 MB.', 'warning');
                     input.value = '';
                     return;
                 }
@@ -40,12 +43,24 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Administración de Proveedores</h2>
+            <nav class="sidebar">
+            <asp:HyperLink ID="hlMiPerfil" runat="server" NavigateUrl="~/MiPerfil.aspx">Mi Perfil</asp:HyperLink>
+
+            <asp:HyperLink ID="hlAdmin" runat="server" NavigateUrl="~/AdminUsuarios.aspx" Visible="true">Panel de Administración de Usuarios</asp:HyperLink>
+
+            <asp:HyperLink ID="hlProveedores" runat="server" NavigateUrl="~/AdminProveedores.aspx" Visible="true">Administrar Proveedores</asp:HyperLink>
+
+            <asp:HyperLink ID="hlProductos" runat="server" NavigateUrl="~/AdminProductos.aspx" Visible="true">Administrar Productos</asp:HyperLink>
+
             <asp:HyperLink ID="hlInicio" runat="server" NavigateUrl="~/Inicio.aspx">Volver al Inicio</asp:HyperLink>
-            <br /><br />
+
+            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="btnCerrarSesion_Click" />
+            </nav>
+            <main class="content">
+            <h2>Administración de Proveedores</h2>
 
             <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Visible="false"></asp:Label>
-            <br />
+            
 
             <asp:GridView ID="gvProveedores" runat="server" AutoGenerateColumns="false"
                 OnRowCommand="gvProveedores_RowCommand" CellPadding="5" DataKeyNames="prv_id">
@@ -60,9 +75,9 @@
                 </Columns>
             </asp:GridView>
 
-            <br />
+            
             <asp:Button ID="btnNuevo" runat="server" Text="Agregar Nuevo Proveedor" OnClick="btnNuevo_Click" />
-            <br /><br />
+            
 
             <asp:Panel ID="pnlFormulario" runat="server" Visible="false">
                 <h3><asp:Label ID="lblTituloFormulario" runat="server" Text="Agregar Proveedor"></asp:Label></h3>
@@ -74,40 +89,41 @@
                 <asp:RequiredFieldValidator ID="rfvNombre" runat="server"
                     ControlToValidate="txtNombre" ErrorMessage="El nombre es obligatorio"
                     ForeColor="Red" EnableClientScript="false"></asp:RequiredFieldValidator>
-                <br /><br />
+                
 
                 <asp:Label ID="lblContacto" runat="server" Text="Persona de Contacto (opcional):"></asp:Label>
                 <asp:TextBox ID="txtContacto" runat="server"></asp:TextBox>
-                <br /><br />
+                
 
                 <asp:Label ID="lblTelefono" runat="server" Text="Teléfono (opcional):"></asp:Label>
                 <asp:TextBox ID="txtTelefono" runat="server"></asp:TextBox>
-                <br /><br />
+                
 
                 <asp:Label ID="lblCorreo" runat="server" Text="Correo (opcional):"></asp:Label>
                 <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
-                <br /><br />
+                
 
                 <asp:Label ID="lblImagen" runat="server" Text="Imagen (opcional):"></asp:Label>
-                <br />
+                
                 <asp:Image ID="imgProveedor" runat="server" Width="100" Height="100" Visible="false" />
                 <asp:Label ID="lblSinImagen" runat="server" Text="(sin imagen)" Font-Italic="true"
                     Visible="false"></asp:Label>
-                <br /><br />
+                
 
                 <asp:FileUpload ID="fuImagen" runat="server" />
                 <asp:Button ID="btnCargarImagen" runat="server" Text="Cargar Imagen" OnClick="btnCargarImagen_Click" />
-                <br />
+                
                 <asp:Label ID="lblInfoImagen" runat="server"
                     Text="(formatos: JPG, PNG, GIF | máximo 30 MB)"
                     ForeColor="Gray" Font-Italic="true"></asp:Label>
-                <br /><br />
+                
 
                 <asp:HiddenField ID="hfNuevaImagen" runat="server" Value="" />
 
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
                 <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" />
             </asp:Panel>
+            </main>
         </div>
     </form>
 </body>

@@ -23,6 +23,13 @@ namespace C_presentacion
             fuImagen.Attributes["onchange"] = "validarImagen(this);";
         }
 
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            Response.Redirect("~/Login.aspx");
+        }
+
         private void CargarGrilla()
         {
             C_negocio.UsuarioNegocio negocio = new C_negocio.UsuarioNegocio();
@@ -211,6 +218,13 @@ namespace C_presentacion
                         return;
                     }
 
+                    if (!string.IsNullOrEmpty(txtCedula.Text.Trim()) && negocio.CedulaExiste(txtCedula.Text.Trim()))
+                    {
+                        lblMensaje.Text = "La cédula ya está registrada por otro usuario.";
+                        lblMensaje.Visible = true;
+                        return;
+                    }
+
                     int nuevoId = negocio.Registrar(
                         txtNombre.Text.Trim(),
                         txtCorreo.Text.Trim(),
@@ -243,10 +257,18 @@ namespace C_presentacion
                 {
                     DataTable dt = negocio.ObtenerUsuarioPorId(usuId);
                     string correoActual = dt.Rows[0]["usu_correo"].ToString();
+                    string cedulaActual = dt.Rows[0]["usu_cedula"].ToString();
 
                     if (txtCorreo.Text.Trim() != correoActual && negocio.CorreoExiste(txtCorreo.Text.Trim()))
                     {
                         lblMensaje.Text = "El correo electrónico ya está registrado por otro usuario.";
+                        lblMensaje.Visible = true;
+                        return;
+                    }
+
+                    if (!string.IsNullOrEmpty(txtCedula.Text.Trim()) && txtCedula.Text.Trim() != cedulaActual && negocio.CedulaExiste(txtCedula.Text.Trim(), usuId))
+                    {
+                        lblMensaje.Text = "La cédula ya está registrada por otro usuario.";
                         lblMensaje.Visible = true;
                         return;
                     }

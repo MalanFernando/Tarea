@@ -27,6 +27,13 @@ namespace C_presentacion
         }
 
         // Carga los datos del usuario desde la base de datos
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            Response.Redirect("~/Login.aspx");
+        }
+
         private void CargarDatosUsuario()
         {
             int usuId = Convert.ToInt32(Session["usu_id"]);
@@ -162,8 +169,19 @@ namespace C_presentacion
                 int usuId = Convert.ToInt32(Session["usu_id"]);
                 C_negocio.UsuarioNegocio negocio = new C_negocio.UsuarioNegocio();
 
+                // Verificar que la cédula (si cambió y no está vacía) no esté ya registrada
+                string cedula = txtCedula.Text.Trim();
+                DataTable dtActual = negocio.ObtenerUsuarioPorId(usuId);
+                string cedulaActual = dtActual.Rows.Count > 0 ? dtActual.Rows[0]["usu_cedula"].ToString() : "";
+                if (!string.IsNullOrEmpty(cedula) && cedula != cedulaActual && negocio.CedulaExiste(cedula, usuId))
+                {
+                    lblMensaje.Text = "La cédula ya está registrada por otro usuario.";
+                    lblMensaje.Visible = true;
+                    return;
+                }
+
                 // Actualizar los datos del perfil (nombre, cedula, celular)
-                negocio.ActualizarPerfil(usuId, txtNombre.Text.Trim(), txtCedula.Text.Trim(), txtCelular.Text.Trim());
+                negocio.ActualizarPerfil(usuId, txtNombre.Text.Trim(), cedula, txtCelular.Text.Trim());
 
                 // Actualizar la imagen de perfil si se cargó una nueva
                 if (!string.IsNullOrEmpty(hfNuevaImagen.Value))

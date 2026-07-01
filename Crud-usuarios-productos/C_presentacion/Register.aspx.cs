@@ -20,6 +20,14 @@ namespace C_presentacion
                     return;
                 }
 
+                // Verificar que la cédula (si se ingresó) no esté ya registrada
+                if (!string.IsNullOrEmpty(txtCedula.Text.Trim()) && negocio.CedulaExiste(txtCedula.Text.Trim()))
+                {
+                    lblMensaje.Text = "La cédula ya está registrada por otro usuario.";
+                    lblMensaje.Visible = true;
+                    return;
+                }
+
                 // Registrar al nuevo usuario en la base de datos
                 int usuId = negocio.Registrar(
                     txtNombre.Text.Trim(),

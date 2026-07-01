@@ -23,6 +23,13 @@ namespace C_presentacion
             fuImagen.Attributes["onchange"] = "validarImagen(this);";
         }
 
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            Response.Redirect("~/Login.aspx");
+        }
+
         private void CargarGrilla()
         {
             C_negocio.ProveedorNegocio negocio = new C_negocio.ProveedorNegocio();

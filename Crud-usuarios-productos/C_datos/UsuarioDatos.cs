@@ -27,6 +27,26 @@ namespace C_datos
             }
         }
 
+        // Verifica si una cédula ya está registrada en la base de datos
+        // excludeUserId permite excluir al propio usuario en ediciones
+        public bool CedulaExiste(string cedula, int? excludeUserId = null)
+        {
+            using (SqlConnection con = conexion.ObtenerConexion())
+            {
+                string query = "SELECT COUNT(*) FROM tbl_usuario WHERE usu_cedula = @cedula";
+                if (excludeUserId.HasValue)
+                    query += " AND usu_id != @excludeId";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@cedula", cedula);
+                if (excludeUserId.HasValue)
+                    cmd.Parameters.AddWithValue("@excludeId", excludeUserId.Value);
+                con.Open();
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
+        }
+
         // Verifica si un correo electrónico ya está registrado en la base de datos
         public bool CorreoExiste(string correo)
         {

@@ -4,3 +4,9 @@ D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos
 D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.csproj.CoreCompileInputs.cache
 D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.dll
 D:\INSTITUTO\TercerSemestre\Progra\tarea2-crud-productos\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.pdb
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_datos\bin\Debug\C_datos.dll
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_datos\bin\Debug\C_datos.pdb
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.dll
+C:\Users\USER\Documents\Institute\Programming\Tarea\Crud-usuarios-productos\C_datos\obj\Debug\C_datos.pdb
