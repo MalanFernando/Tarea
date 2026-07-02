@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_presentacion\\masterpages\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\masterpages\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_presentacion\\masterpages\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\masterpages\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_presentacion\\masterpages\\public.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\masterpages\\public.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_presentacion\\miperfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\miperfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_presentacion\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_presentacion\\validators\\perfilvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B491B02E-ABD5-4B8E-98B6-46A0AA1E5ECE}|C_presentacion\\C_presentacion.csproj|solutionrelative:c_presentacion\\validators\\perfilvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|solutionrelative:c_datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_datos\\usuariodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A953C8C2-ABF9-423B-9217-1178AE152BC2}|C_datos\\C_datos.csproj|solutionrelative:c_datos\\usuariodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45478397-491C-4173-A006-8BAB607286D7}|C_negocio\\C_negocio.csproj|d:\\instituto\\tercersemestre\\progra\\tarea3\u0027formulario\\sistarea3\\c_negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45478397-491C-4173-A006-8BAB607286D7}|C_negocio\\C_negocio.csproj|solutionrelative:c_negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Site.Master",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MasterPages\\Site.Master",
+              "RelativeDocumentMoniker": "C_presentacion\\MasterPages\\Site.Master",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MasterPages\\Site.Master",
+              "RelativeToolTip": "C_presentacion\\MasterPages\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-01T22:01:41.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Site.Master.cs",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MasterPages\\Site.Master.cs",
+              "RelativeDocumentMoniker": "C_presentacion\\MasterPages\\Site.Master.cs",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MasterPages\\Site.Master.cs",
+              "RelativeToolTip": "C_presentacion\\MasterPages\\Site.Master.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T22:07:16.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Public.Master",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MasterPages\\Public.Master",
+              "RelativeDocumentMoniker": "C_presentacion\\MasterPages\\Public.Master",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MasterPages\\Public.Master",
+              "RelativeToolTip": "C_presentacion\\MasterPages\\Public.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-01T22:01:42.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Inicio.aspx",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\Inicio.aspx",
+              "RelativeDocumentMoniker": "C_presentacion\\Inicio.aspx",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\Inicio.aspx",
+              "RelativeToolTip": "C_presentacion\\Inicio.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-01T22:01:53.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MiPerfil.aspx",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MiPerfil.aspx",
+              "RelativeDocumentMoniker": "C_presentacion\\MiPerfil.aspx",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\MiPerfil.aspx",
+              "RelativeToolTip": "C_presentacion\\MiPerfil.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-01T22:01:56.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PerfilValidator.cs",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\Validators\\PerfilValidator.cs",
+              "RelativeDocumentMoniker": "C_presentacion\\Validators\\PerfilValidator.cs",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_presentacion\\Validators\\PerfilValidator.cs",
+              "RelativeToolTip": "C_presentacion\\Validators\\PerfilValidator.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T22:05:01.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "C_datos\\Conexion.cs",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_datos\\Conexion.cs",
+              "RelativeToolTip": "C_datos\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T22:03:13.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuarioDatos.cs",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_datos\\UsuarioDatos.cs",
+              "RelativeDocumentMoniker": "C_datos\\UsuarioDatos.cs",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_datos\\UsuarioDatos.cs",
+              "RelativeToolTip": "C_datos\\UsuarioDatos.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T22:03:02.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioNegocio.cs",
+              "DocumentMoniker": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_negocio\\UsuarioNegocio.cs",
+              "RelativeDocumentMoniker": "C_negocio\\UsuarioNegocio.cs",
+              "ToolTip": "D:\\INSTITUTO\\TercerSemestre\\Progra\\tarea3\u0027formulario\\sisTarea3\\C_negocio\\UsuarioNegocio.cs",
+              "RelativeToolTip": "C_negocio\\UsuarioNegocio.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T22:02:49.692Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

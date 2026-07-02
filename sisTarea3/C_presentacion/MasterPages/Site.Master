@@ -1,0 +1,44 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="C_presentacion.Site" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+        <title>CRUD Tienda</title>
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/Styles/site.css") %>" />
+    <script src="<%= ResolveUrl("~/Scripts/toast.js") %>"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="app-layout">
+            <aside class="sidebar">
+                <div class="sidebar-brand">
+                    <span class="brand-mark">CT</span>
+                    <div class="brand-line"></div>
+                </div>
+                <div class="sidebar-user">
+                    <div class="user-avatar">
+                        <asp:Label ID="lblAvatar" runat="server" />
+                    </div>
+                    <asp:Label ID="lblBienvenida" runat="server" CssClass="user-name" />
+                    <asp:Label ID="lblRol" runat="server" CssClass="user-role" />
+                </div>
+                <nav class="sidebar-nav">
+                    <asp:HyperLink ID="hlInicio" runat="server" NavigateUrl="~/Inicio.aspx" CssClass="nav-link">Inicio</asp:HyperLink>
+                    <asp:HyperLink ID="hlMiPerfil" runat="server" NavigateUrl="~/MiPerfil.aspx" CssClass="nav-link">Mi Perfil</asp:HyperLink>
+                    <asp:HyperLink ID="hlAdmin" runat="server" NavigateUrl="~/AdminUsuarios.aspx" CssClass="nav-link">Usuarios</asp:HyperLink>
+                </nav>
+                <div class="sidebar-footer">
+                    <asp:Button ID="BtnCerrarSesion" runat="server" Text="Cerrar sesión" OnClick="BtnCerrarSesion_Click" CssClass="btn-logout" />
+                </div>
+            </aside>
+            <main class="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </main>
+        </div>
+    </form>
+</body>
+</html>

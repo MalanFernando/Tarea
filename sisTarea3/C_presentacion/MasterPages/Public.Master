@@ -1,0 +1,21 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.Master.cs" Inherits="C_presentacion.Public" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+        <title>CRUD Tienda</title>
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/Styles/site.css") %>" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auth-container">
+            <div class="auth-card">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

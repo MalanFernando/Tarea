@@ -1,0 +1,9 @@
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\bin\Debug\C_negocio.dll
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\bin\Debug\C_negocio.pdb
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\bin\Debug\C_datos.dll
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\bin\Debug\C_datos.pdb
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\obj\Debug\C_negocio.csproj.AssemblyReference.cache
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\obj\Debug\C_negocio.csproj.CoreCompileInputs.cache
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\obj\Debug\C_negocio.csproj.Up2Date
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\obj\Debug\C_negocio.dll
+D:\INSTITUTO\TercerSemestre\Progra\tarea3'formulario\sisTarea3\C_negocio\obj\Debug\C_negocio.pdb
